@@ -9,7 +9,7 @@ class DataBinding {
   } 
   init() {
     this.setProxy();
-    this.setInitialValue('Initial value');
+    this.setInitialValue('initial value');
     this.displayValue();
     this.addEventListeners();
   }
