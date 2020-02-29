@@ -9,7 +9,7 @@ class DataBinding {
   } 
   init() {
     this.setProxy();
-    this.setInitialValue('initial value');
+    this.setInitialValue('Initial value');
     this.displayValue();
     this.addEventListeners();
   }
@@ -44,6 +44,11 @@ class DataBinding {
       this.data.value = event.target.value;
       this.displayValue(); 
   }
+  // passDataToWindowObject() {
+    // Object.keys(this.data).forEach(key => {
+      // window.key = this.data[key]
+    // })
+  // }
 }
 
 window.dataBinding = new DataBinding();
