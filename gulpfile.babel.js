@@ -10,14 +10,12 @@ gulp.task('server', () => getTaskBuild('server'));
 gulp.task('nunjucks', () => getTaskBuild('nunjucks'));
 gulp.task('sass', () => getTaskBuild('sass'));
 gulp.task('svgo', () => getTaskBuild('svgo'));
-gulp.task('list-pages', getTaskBuild('list-pages'));
 gulp.task('webpack', getTaskBuild('webpack'));
 
 gulp.task('copy:watch', getTaskWatch('copy'));
 gulp.task('nunjucks:watch', getTaskWatch('nunjucks'));
 gulp.task('sass:watch', getTaskWatch('sass'));
 gulp.task('svgo:watch', getTaskWatch('svgo'));
-gulp.task('list-pages:watch', getTaskWatch('list-pages'));
 gulp.task('webpack:watch', getTaskWatch('webpack'));
 
 const setmodeProd = done => {
@@ -41,7 +39,6 @@ gulp.task(
     'sass',
     'nunjucks',
     'webpack',
-    'list-pages',
     'copy'
   )
 );
@@ -55,7 +52,6 @@ gulp.task(
     'sass',
     'nunjucks',
     'webpack',
-    'list-pages',
     'copy'
   )
 );
@@ -66,7 +62,6 @@ gulp.task(
     'copy:watch',
     'nunjucks:watch',
     'svgo:watch',
-    'list-pages:watch',
     'webpack:watch',
     'sass:watch'
   )
