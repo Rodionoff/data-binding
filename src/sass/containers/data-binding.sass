@@ -1,33 +1,38 @@
+// $primary-color: lighten(teal, 20%)
+$primary-color: lighten(teal, 00%)
+
 .data-binding
   max-width: 400px
   .description
     margin-bottom: 10px
   .example
-    border: 1px solid teal
+    border: 1px solid $primary-color
     padding: 10px 15px
     // overflow-x: scroll
+    // max-width: 244px
     overflow: hidden
     margin-bottom: 10px
   pre
     // display: inline
     // width: auto
     padding: 5px 10px
-    border: 1px solid teal
+    border: 1px solid $primary-color
 
     // background-color: lighten(grey, 40%)
   code
 
   input
-    border: 1px solid #444
+    border: 1px solid $primary-color
     padding: 5px 10px
     margin: 5px 0 10px
     font-size: 1.1rem
   .input-value
-    white-space: nowrap
-    overflow: hidden
+    border-bottom: 1px dashed $primary-color
     span
-      // color: teal
-      // color: blue(blue)
-      font-weight: 500
+      padding: 5px 10px 0px 10px
       font-size: 1.1rem
-
+      min-height: 27px
+      display: block
+      white-space: nowrap
+      overflow: hidden
+      margin-top: 5px
