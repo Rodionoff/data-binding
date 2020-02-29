@@ -1,0 +1,8 @@
+{
+  "presets": [
+    ["@babel/preset-env"]
+  ],
+  "parserOpts": {
+  	"plugins": ["transform-object-rest-spread", "transform-es2015-spread", "transform-es2015-destructuring"]
+  }
+}
